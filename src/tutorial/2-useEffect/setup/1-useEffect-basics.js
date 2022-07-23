@@ -3,7 +3,19 @@ import React, { useState, useEffect } from 'react';
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
-  return <h2>useEffect Basics</h2>;
-};
+  const [value, setValue] = useState(window.innerWidth);
+  const checkResize =()=>{
+    setValue(window.innerWidth);
+  }
+  useEffect(()=>{
+    window.addEventListener('resize', checkResize);
+  },[])
+ 
+  console.log(value)
+  return <>
+   <h1>Window</h1>
+   <h2>{value}</h2>;
 
+  </>
+};
 export default UseEffectBasics;

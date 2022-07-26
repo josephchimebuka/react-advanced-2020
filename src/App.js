@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from '../src/tutorial/2-useEffect/setup/3-useEffect-fetch-data.js'
+import Setup from '../src/tutorial/3-conditional-rendering/setup/3-show-hide'
 function App() {
   return (
     <div className='container'>
